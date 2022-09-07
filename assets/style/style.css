@@ -10,6 +10,13 @@ body{
     justify-content: center;
     align-items: center;
 }
+.display{
+    width: 70vh;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
+    min-height: 9rem;
+}
 .grid{
     display: block;
     justify-content: center;
@@ -27,3 +34,7 @@ body{
 .fa-regular {
     color: white;
   }
+button{
+    background-color: transparent;
+    border: none;
+}
