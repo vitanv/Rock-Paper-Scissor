@@ -45,3 +45,13 @@ button{
     background-color: transparent;
     border: none;
 }
+
+.Button-Image{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.Display-Image{
+    max-width: 55px;
+    max-height: 55px;
+}
