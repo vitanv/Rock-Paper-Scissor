@@ -1,14 +1,25 @@
+const rockImage = '<image src="assets/style/Images/Rock.png" class="Display-Image">';
+const paperImage = '<image src="assets/style/Images/Paper.png" class="Display-Image">';
+const scissorImage = '<image src="assets/style/Images/Scissor.png" class="Display-Image">';
+
 const chooseHand = (value) =>{
+    computerChoice();
     switch(value){
         case "rock":
-            document.getElementById("Player").innerHTML = '<image src="assets/style/Images/Rock.png" class="Display-Image">';
+            document.getElementById("Player").innerHTML = rockImage;
             break;
         case "paper":
-            document.getElementById("Player").innerHTML = '<image src="assets/style/Images/Paper.png" class="Display-Image">';
+            document.getElementById("Player").innerHTML = paperImage;
             break;
         case "scissors":
-            document.getElementById("Player").innerHTML = '<image src="assets/style/Images/Scissor.png" class="Display-Image">';
+            document.getElementById("Player").innerHTML = scissorImage;
             break;
 
     }
+}
+
+const computerChoice = () =>{
+    console.log(Math.floor(Math.random() * 3 + 1));
+    let random = Math.floor(Math.random() * 3 + 1);
+    switch()
 }
