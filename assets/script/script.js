@@ -2,6 +2,7 @@ const rockImage = '<image src="assets/style/Images/Rock.png" class="Display-Imag
 const paperImage = '<image src="assets/style/Images/Paper.png" class="Display-Image">';
 const scissorImage = '<image src="assets/style/Images/Scissor.png" class="Display-Image">';
 
+
 const chooseHand = (value) =>{
     computerChoice();
     switch(value){
