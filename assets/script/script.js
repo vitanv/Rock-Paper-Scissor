@@ -19,7 +19,16 @@ const chooseHand = (value) =>{
 }
 
 const computerChoice = () =>{
-    console.log(Math.floor(Math.random() * 3 + 1));
     let random = Math.floor(Math.random() * 3 + 1);
-    switch()
+    switch(random){
+        case 1:
+            document.getElementById("AI").innerHTML = rockImage;
+            break;
+        case 2:
+            document.getElementById("AI").innerHTML = paperImage;
+            break;
+        case 3:
+            document.getElementById("AI").innerHTML = scissorImage;
+            break;
+    }
 }
