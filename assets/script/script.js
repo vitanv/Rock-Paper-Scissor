@@ -2,9 +2,13 @@ const rockImage = '<image src="assets/style/Images/Rock.png" class="Display-Imag
 const paperImage = '<image src="assets/style/Images/Paper.png" class="Display-Image">';
 const scissorImage = '<image src="assets/style/Images/Scissor.png" class="Display-Image">';
 
-
-const chooseHand = (value) =>{
+ 
+function playGame (value){
+    playerChoice(value);
     computerChoice();
+}
+
+function playerChoice (value){
     switch(value){
         case "rock":
             document.getElementById("Player").innerHTML = rockImage;
@@ -19,7 +23,7 @@ const chooseHand = (value) =>{
     }
 }
 
-const computerChoice = () =>{
+function computerChoice(){
     let random = Math.floor(Math.random() * 3 + 1);
     switch(random){
         case 1:
