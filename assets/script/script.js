@@ -8,6 +8,31 @@ let computerHand;
 function playGame (value){
     playerChoice(value);
     computerChoice();
+    if(playerHand == "rock"){
+        if(computerHand == "paper"){
+            playerLost();
+        }else if(computerHand == "scissor"){
+            playerWon();
+        }else{
+            draw()
+        }
+    }else if(playerHand == "paper"){
+        if(computerHand == "scissor"){
+            playerLost();
+        }else if(computerHand == "rock"){
+            playerWon();
+        }else{
+            draw()
+        }
+    }else {
+        if(computerHand == "rock"){
+            playerLost();
+        }else if(computerHand == "paper"){
+            playerWon();
+        }else{
+            draw()
+        }
+    }
    
 }
 
@@ -45,4 +70,16 @@ function computerChoice(){
             computerHand = "scissors";
             break;
     }
+}
+
+function playerLost(){
+    document.getElementById("status").innerHTML ="You Lost!";
+}
+
+function playerWon(){
+    document.getElementById("status").innerHTML ="You Won!";
+}
+
+function draw(){
+    document.getElementById("status").innerHTML ="Its a draw";
 }
