@@ -4,6 +4,8 @@ const scissorImage = '<image src="assets/style/Images/Scissor.png" class="Displa
 
 let playerHand;
 let computerHand;
+let playerScore = 0;
+let computerScore = 0;
  
 function playGame (value){
     playerChoice(value);
@@ -74,10 +76,14 @@ function computerChoice(){
 
 function playerLost(){
     document.getElementById("status").innerHTML ="You Lost!";
+    computerScore++;
+    document.getElementById("computer-score").innerHTML = computerScore;
 }
 
 function playerWon(){
     document.getElementById("status").innerHTML ="You Won!";
+    playerScore++;
+    document.getElementById("human-score").innerHTML = playerScore;
 }
 
 function draw(){
