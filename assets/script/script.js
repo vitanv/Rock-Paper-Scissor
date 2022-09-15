@@ -83,7 +83,7 @@ function playerLost(){
 function playerWon(){
     document.getElementById("status").innerHTML ="You Won!";
     playerScore++;
-    document.getElementById("human-score").innerHTML = playerScore;
+    document.getElementById("computer-score").innerHTML = playerScore;
 }
 
 function draw(){
