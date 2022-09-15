@@ -78,12 +78,14 @@ function playerLost(){
     document.getElementById("status").innerHTML ="You Lost!";
     computerScore++;
     document.getElementById("computer-score").innerHTML = computerScore;
+    console.log("player lost");
 }
 
 function playerWon(){
     document.getElementById("status").innerHTML ="You Won!";
     playerScore++;
-    document.getElementById("computer-score").innerHTML = playerScore;
+    document.getElementById("human-score").innerHTML = playerScore;
+    console.log("player won");
 }
 
 function draw(){
