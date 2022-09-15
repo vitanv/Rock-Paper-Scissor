@@ -69,3 +69,7 @@ button{
 #footer{
     flex-flow: column;
 }
+
+.score-adjustment{
+    display: flex;
+}

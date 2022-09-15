@@ -6,8 +6,10 @@ let playerHand;
 let computerHand;
 let playerScore = 0;
 let computerScore = 0;
+let maximum = 3;
  
 function playGame (value){
+    if(playerScore == maximum || computerScore == maximum) return;
     playerChoice(value);
     computerChoice();
     if(playerHand == "rock"){
@@ -34,6 +36,11 @@ function playGame (value){
         }else{
             draw()
         }
+    }
+    if(playerScore == maximum){
+        document.getElementById("status").innerHTML ="Victory Is Yours!";
+    }else if(computerScore == maximum){
+        document.getElementById("status").innerHTML ="You Have Been Defeated...";
     }
    
 }
@@ -75,14 +82,14 @@ function computerChoice(){
 }
 
 function playerLost(){
-    document.getElementById("status").innerHTML ="You Lost!";
+    document.getElementById("status").innerHTML ="You Lost This Round!";
     computerScore++;
     document.getElementById("computer-score").innerHTML = computerScore;
     console.log("player lost");
 }
 
 function playerWon(){
-    document.getElementById("status").innerHTML ="You Won!";
+    document.getElementById("status").innerHTML ="You Won This Round!";
     playerScore++;
     document.getElementById("human-score").innerHTML = playerScore;
     console.log("player won");
