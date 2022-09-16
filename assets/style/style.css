@@ -51,7 +51,8 @@ body{
 .fa-regular {
     color: white;
   }
-button{
+  
+.choice-button{
     background-color: rgba(0,0,0,0);
     border: none;
 }

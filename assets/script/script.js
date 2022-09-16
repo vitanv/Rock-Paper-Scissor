@@ -7,6 +7,7 @@ let computerHand;
 let playerScore = 0;
 let computerScore = 0;
 let maximum = 3;
+let reset = '<button class="btn btn-dark">Play Again</button>'
 
 function changeMax(value){
     if(playerScore + computerScore > 0){
@@ -56,8 +57,10 @@ function playGame (value){
     }
     if(playerScore == maximum){
         document.getElementById("status").innerHTML ="Victory Is Yours!";
+        document.getElementById("reset").innerHTML = reset;
     }else if(computerScore == maximum){
         document.getElementById("status").innerHTML ="You Have Been Defeated...";
+        document.getElementById("reset").innerHTML = reset;
     }
    
 }
