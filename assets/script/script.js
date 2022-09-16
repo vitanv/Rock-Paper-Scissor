@@ -7,7 +7,7 @@ let computerHand;
 let playerScore = 0;
 let computerScore = 0;
 let maximum = 3;
-let reset = '<button class="btn btn-dark">Play Again</button>'
+let reset = '<button class="btn btn-dark" onclick="playAgain()">Play Again</button>'
 
 function changeMax(value){
     if(playerScore + computerScore > 0){
@@ -117,4 +117,12 @@ function playerWon(){
 
 function draw(){
     document.getElementById("status").innerHTML ="Its a draw";
+}
+
+function playAgain(){
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById("human-score").innerHTML = playerScore;
+    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("status").innerHTML ="";
 }
