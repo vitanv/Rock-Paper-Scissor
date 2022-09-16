@@ -8,17 +8,19 @@ let playerScore = 0;
 let computerScore = 0;
 let maximum = 3;
 
-function increaseScore(){
-    if(maximum == 10) return;
-    maximum++;
-    document.getElementById("maximum-score").innerHTML = maximum;
+function changeMax(value){
+    console.log(value);
+    if(value == "increase"){
+        if(maximum == 10) return;
+        maximum++;
+        document.getElementById("maximum-score").innerHTML = maximum;
+    }else{
+        if(maximum == 3) return;
+        maximum--;
+        document.getElementById("maximum-score").innerHTML = maximum;
+    }
 }
 
-function decreaseScore(){
-    if(maximum == 3) return;
-    maximum--;
-    document.getElementById("maximum-score").innerHTML = maximum;
-}
  
 function playGame (value){
     if(playerScore == maximum || computerScore == maximum) return;
