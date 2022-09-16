@@ -9,7 +9,10 @@ let computerScore = 0;
 let maximum = 3;
 
 function changeMax(value){
-    console.log(value);
+    if(playerScore + computerScore > 0){
+        document.getElementById("status").innerHTML ="No Cheating Allowed!";
+        return;
+    }
     if(value == "increase"){
         if(maximum == 10) return;
         maximum++;
