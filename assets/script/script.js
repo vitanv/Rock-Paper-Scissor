@@ -125,4 +125,5 @@ function playAgain(){
     document.getElementById("human-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
     document.getElementById("status").innerHTML ="";
+    document.getElementById("reset").innerHTML = "";
 }

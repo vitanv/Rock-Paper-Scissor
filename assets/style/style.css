@@ -2,6 +2,7 @@ body{
     background-color: black;
     color: white;
     height: 100%;
+    overflow: hidden;
 }
 .scoreboard{
     display: flex;
@@ -51,7 +52,7 @@ body{
 .fa-regular {
     color: white;
   }
-  
+
 .choice-button{
     background-color: rgba(0,0,0,0);
     border: none;
