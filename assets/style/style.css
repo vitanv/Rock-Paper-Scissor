@@ -1,7 +1,11 @@
 body{
     background-color: black;
+    max-width: fit-content;
     color: white;
     overflow: hidden;
+    display: inline-block;
+    transform: scale(1.6);
+    transform-origin: 0 0;
 }
 .scoreboard{
     display: flex;
@@ -11,7 +15,9 @@ body{
 .score{
     margin: auto;
 }
-
+.wraper{
+    margin: 2rem 2rem 2rem 2rem;
+}
 .container{
     max-height: 100vh;
     width: 100vh;

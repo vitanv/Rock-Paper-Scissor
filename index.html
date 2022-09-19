@@ -11,66 +11,68 @@
     </head>
     <body>
         <h1 class="text-center">Rock Paper Scissor</h1>
-        <div class="scoreboard">
-            <p class="score">Computer: <span id="computer-score">0</span></p>
-            <span id="reset"></button></span>
-            <p class="score">Player: <span id="human-score">0</span></p>
-        </div>
-        <div class="container">  
-            <div class="display" id="content">
-                <div class="section" id="AI">
-                    <image 
-                        src="assets/style/Images/Rock.png"
-                        class="Display-Image"
-                    >
+        <div class="wraper">
+            <div class="scoreboard">
+                <p class="score">Computer: <span id="computer-score">0</span></p>
+                <span id="reset"></button></span>
+                <p class="score">Player: <span id="human-score">0</span></p>
+            </div>
+            <div class="container">  
+                <div class="display" id="content">
+                    <div class="section" id="AI">
+                        <image 
+                            src="assets/style/Images/Rock.png"
+                            class="Display-Image"
+                        >
+                    </div>
+                    <div class="section" id="Player">
+                        <image 
+                            src="assets/style/Images/Rock.png"
+                            class="Display-Image"
+                        >
+                    </div>
                 </div>
-                <div class="section" id="Player">
-                    <image 
-                        src="assets/style/Images/Rock.png"
-                        class="Display-Image"
-                    >
+                <div class="grid">
+                    <div class="row">
+                        <button value="rock" class="choice-button" onclick="playGame(this.value)">
+                            <div class="col-lg-6">
+                                <image 
+                                    src="assets/style/Images/Rock.png"
+                                    class="Button-Image"
+                                >
+                            </div>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button value="paper" class="choice-button" onclick="playGame(this.value)">
+                            <div class="col-lg-6">
+                                <image 
+                                    src="assets/style/Images/Paper.png"
+                                    class="Button-Image"
+                                >
+                            </div>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button value="scissors" class="choice-button" onclick="playGame(this.value)">
+                            <div class="col-lg-6">
+                                <image 
+                                    src="assets/style/Images/Scissor.png"
+                                    class="Button-Image"
+                                >
+                            </div>
+                        </button>
+                    </div>  
                 </div>
             </div>
-            <div class="grid">
-                <div class="row">
-                    <button value="rock" class="choice-button" onclick="playGame(this.value)">
-                        <div class="col-lg-6">
-                            <image 
-                                src="assets/style/Images/Rock.png"
-                                class="Button-Image"
-                            >
-                        </div>
-                    </button>
+            <div class="container" id="footer">
+                <div class="score-adjustment">
+                    <p>First to reach a score of <span id="maximum-score">3</span> wins!</p>  
                 </div>
-                <div class="row">
-                    <button value="paper" class="choice-button" onclick="playGame(this.value)">
-                        <div class="col-lg-6">
-                            <image 
-                                src="assets/style/Images/Paper.png"
-                                class="Button-Image"
-                            >
-                        </div>
-                    </button>
-                </div>
-                <div class="row">
-                    <button value="scissors" class="choice-button" onclick="playGame(this.value)">
-                        <div class="col-lg-6">
-                            <image 
-                                src="assets/style/Images/Scissor.png"
-                                class="Button-Image"
-                            >
-                        </div>
-                    </button>
-                </div>  
+                <i class="arrow up"  onclick="changeMax('increase')"></i>
+                <i class="arrow down"  onclick="changeMax('decrease')"></i>
+                <p id="status"></p>
             </div>
-        </div>
-        <div class="container" id="footer">
-            <div class="score-adjustment">
-                <p>First to reach a score of <span id="maximum-score">3</span> wins!</p>  
-            </div>
-            <i class="arrow up"  onclick="changeMax('increase')"></i>
-            <i class="arrow down"  onclick="changeMax('decrease')"></i>
-            <p id="status"></p>
         </div>
         <script src="assets/script/script.js"></script>
     </body>
