@@ -126,4 +126,6 @@ function playAgain(){
     document.getElementById("computer-score").innerHTML = computerScore;
     document.getElementById("status").innerHTML ="";
     document.getElementById("reset").innerHTML = "";
+    document.getElementById("Player").innerHTML = "";
+    document.getElementById("AI").innerHTML = "";
 }
