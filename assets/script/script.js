@@ -77,7 +77,7 @@ function playerChoice (value){
             break;
         case "scissors":
             document.getElementById("Player").innerHTML = scissorImage;
-            playerHand = "scissors";
+            playerHand = "scissor";
             break;
 
     }
@@ -96,7 +96,7 @@ function computerChoice(){
             break;
         case 3:
             document.getElementById("AI").innerHTML = scissorImage;
-            computerHand = "scissors";
+            computerHand = "scissor";
             break;
     }
 }
